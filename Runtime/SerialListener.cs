@@ -15,7 +15,7 @@ public class SerialListener : MonoBehaviour
     void OnMessageArrived(string _msg)
     {
         //
-        Debug.Log($"[MSG] {_msg}");
+        Debug.Log($"[{controller.portName}] {_msg}");
     }
 
     /// <summary>
@@ -30,13 +30,15 @@ public class SerialListener : MonoBehaviour
     }
 
     /// <summary>
-    /// Writes a string to the serial port
+    /// Writes a string to the serial port.
+    /// Write just a single character for best effect.
     /// </summary>
     public void Write(string _msg) => controller.SendSerialMessage(_msg);
 
     void Update()
     {
-        //Example
-        if (Input.GetKeyDown(KeyCode.Space)) { Write("space"); }
+        //Example - single characters being sent to the arduino work best
+        if (Input.GetKeyDown(KeyCode.A)) { Write("A"); }
+        else if (Input.GetKeyDown(KeyCode.Z)) { Write("Z"); }
     }
 }
