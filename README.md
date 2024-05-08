@@ -1,2 +1,3 @@
-# Package-Template
-Template for creating a new package
+# Package-Arduino
+
+Package for serial port communication with arduino boards

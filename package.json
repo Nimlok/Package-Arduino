@@ -1,8 +1,8 @@
 {
-    "name": "com.nimlok.template",
+    "name": "com.nimlok.arduino",
     "version": "0.0.1",
-    "displayName": "template",
-    "description": "to be copied from",
+    "displayName": "arduino",
+    "description": "serial port communication for Arduino boards",
     "unity": "2019.1",
     "unityRelease": "0b5",
     "documentationUrl": "https://example.com/",
@@ -10,12 +10,12 @@
     "licensesUrl": "https://example.com/licensing.html",
     "dependencies": {},
     "keywords": [
-        "Template",
-        "Nimlok"
+        "Nimlok",
+	"arduino"
     ],
     "author": {
-        "name": "Your name",
-        "email": "nimlok Email",
+        "name": "jack watson",
+        "email": "jack.watson@nimlok.co.uk",
         "url": "https://www.nimlok.co.uk"
     }
 }
